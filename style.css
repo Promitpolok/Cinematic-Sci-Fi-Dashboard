@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  background: radial-gradient(ellipse at center, #0d0d0d 0%, #000000 100%);
+  color: #00ffe7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard {
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid #00ffe7;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #00ffe7;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2em;
+  letter-spacing: 2px;
+}
+
+.subheading {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 4px;
+}
+
+.widgets {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.widget {
+  flex: 1 1 30%;
+  background: rgba(0, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #00ffe7;
+  box-shadow: inset 0 0 10px #00ffe7;
+  position: relative;
+}
+
+#energy-core .core-glow {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, #00ffe7, #001f1f);
+  border-radius: 50%;
+  margin: 20px auto;
+  box-shadow: 0 0 20px 10px #00ffe7;
+}
+
+#oxygen-level .circle {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #00ffe7;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+#ai-alerts ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+#ai-alerts li {
+  margin-bottom: 5px;
+  color: #ff3cac;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.85em;
+  color: #ccc;
+}
