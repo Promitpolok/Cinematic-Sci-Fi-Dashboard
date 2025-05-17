@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,13 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <body>
+  <div class="space-bg">
+    <div class="stars"></div>
+    <div class="planets"></div>
+    <div class="rocks"></div>
+  </div>
+
   <div class="dashboard">
     <header>
       <h1>Starship Control Panel</h1>
@@ -14,13 +22,13 @@
     </header>
 
     <section class="widgets">
-      <div class="widget" id="energy-core">
+      <div class="widget" id="energy-core" onclick="location.href='energy-core.html'">
         <h2>Energy Core</h2>
         <div class="core-glow"></div>
         <p class="status">Stabilizing...</p>
       </div>
 
-      <div class="widget" id="oxygen-level">
+      <div class="widget" id="oxygen-level" onclick="location.href='oxygen-level.html'">
         <h2>Oxygen Level</h2>
         <div class="circle">
           <span id="oxygen-value">93%</span>
